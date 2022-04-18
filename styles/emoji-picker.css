@@ -1,0 +1,41 @@
+/*
+ * emoji-picker.css v0.1.1
+ * Projet : Composant
+ * Copyright 2022 Thierry Bouedo
+ */
+
+  .emoji-picker-dropdown {
+    position: absolute;
+    right: 2px;
+    top: 25px;
+    z-index: 10;
+    border: solid 1px #285ba8;
+    border-radius: 2px;
+    background-color: #ffffff;
+    text-align: center;
+    font-size: 18px;
+    cursor: pointer;
+  }
+  .emoji-picker-dropdown .button {
+    font-size: 16px;
+    padding: 1px 12px 3px 12px;
+    background: #285ba8;
+    color: #fff;
+  }
+  .emoji-picker-dropdown .content {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  .emoji-picker-dropdown .content li {
+    padding: 4px;
+  }
+  .emoji-picker-dropdown .content li:hover {
+    background-color: #bfe4fd;
+  }
+  .hidden {
+    display: none;
+  }
+  .visible {
+    display: block;
+  }

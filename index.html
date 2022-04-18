@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="initial-scale=1.0, width=device-width">
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="./styles/miam.css">
+    <link rel="stylesheet" href="./styles/emoji-picker.css">
+    <script src="./js/emoji-picker.js"></script>
+    <script src="./js/miam.js"></script>
+    <script src="./js/menu.js"></script>
+    <title>Triangle du miam</title>
+  </head>
+
+  <body>
+    <div class="mainbox">
+      <div class="banner">
+        <p class="title">Triangle du miam</p>
+      </div>
+      <form id="inputData">
+        
+        <div class="item">
+          <label for="order">Commande</label>
+          <input type="text"
+            class="emoji-picker" 
+            id = "order" name="order"
+            data-content = ""
+            accept="utf-8"
+            required
+            maxlength="14"
+            placeholder="Choisir 14 repas (dans la liste proposée)" />
+        </div>
+
+        <div class="item">
+          <label for="day">Prédiction du jour</label>
+          <input type="number" 
+            id="day" name="day" 
+            required
+            pattern="[0-9]{1,}"
+            min="1" max="53"
+            placeholder="Choisir un jour (entre 1 et 53)" />
+        </div>
+
+        <div class="applybox">
+          <button type="submit">Prédire</button>
+          <button type="reset">Effacer</button>
+        </div>
+      </form>
+
+      <div id="resultBox" class="resultbox"></div>
+    </div>
+
+    <script>
+      window.addEventListener('load', function() { 
+        app.init();
+      }, false);
+    </script>
+  
+  </body>
+</html>
